@@ -1,0 +1,53 @@
+:root{
+  --bg:#0f1724; /* dark navy */
+  --accent:#ff5a1f; /* naranja */
+  --muted:#9aa4b2;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+body{font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#071129; background:linear-gradient(180deg,#fff 0%,#fffaf5 100%)}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.ff-header{background:transparent;padding:1rem 0;position:sticky;top:0;z-index:20}
+.ff-header .container{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;font-size:1.4rem;color:var(--accent)}
+.nav a{margin-right:1rem;text-decoration:none;color:#0b1220}
+.nav .btn{margin-left:0.5rem}
+
+.hero{padding:2.5rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:1.5rem;align-items:center}
+.hero h1{font-size:2.1rem;margin:0 0 0.5rem}
+.lead{color:var(--muted);margin-bottom:1rem}
+.hero-card{background:#fff;padding:1rem;border-radius:14px;box-shadow:0 6px 20px rgba(10,10,10,0.08);display:flex;align-items:center;justify-content:center}
+.hero-card img{width:100%;height:auto;border-radius:10px}
+.hero-ctas .btn{margin-right:0.5rem}
+
+.section-title{font-size:1.4rem;margin:0 0 1rem}
+.menu-section{padding:1.5rem 0}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(12,12,12,0.06);display:flex;flex-direction:column}
+.card img{width:100%;height:160px;object-fit:cover}
+.card-body{padding:0.9rem;display:flex;flex-direction:column;flex:1}
+.card-body h3{margin:0 0 0.4rem}
+.card-body p{flex:1;color:var(--muted);margin:0 0 0.8rem}
+.card-footer{display:flex;align-items:center;justify-content:space-between}
+.price{font-weight:700}
+
+.btn{border:0;padding:0.55rem 0.9rem;border-radius:8px;cursor:pointer;font-weight:600}
+.btn-primary{background:var(--accent);color:white}
+.btn-ghost{background:transparent;border:1px solid #e6e6e6}
+.btn-sm{padding:0.4rem 0.7rem;font-size:0.9rem}
+
+.about{padding:1.5rem 0}
+.site-footer{background:#071129;color:#dbe6ef;padding:1.5rem 0;margin-top:2rem}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+.newsletter{display:flex}
+.newsletter input{flex:1;padding:0.5rem;border-radius:7px 0 0 7px;border:0}
+.newsletter button{border-radius:0 7px 7px 0}
+.copyright{padding:0.8rem 0;text-align:center;color:rgba(255,255,255,0.7)}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-card{order:-1}
+  .footer-grid{grid-template-columns:1fr}
+}

@@ -1,0 +1,98 @@
+<header class="ff-header">
+  <div class="container">
+    <div class="brand">FastBite</div>
+    <nav class="nav">
+      <a href="#menu">Menú</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contacto">Contacto</a>
+      <button class="btn btn-primary">Ordenar</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Comida rápida, sabor que vuelve</h1>
+      <p class="lead">Hamburguesas jugosas, papas crujientes y combos listos para llevar. ¡Pide online y recógelo o recibe en casa!</p>
+      <div class="hero-ctas">
+        <button class="btn btn-primary">Ver menú</button>
+        <button class="btn btn-ghost">Reservar mesa</button>
+      </div>
+    </div>
+    <div class="hero-card">
+      <!-- placeholder de producto -->
+      <img alt="Hamburguesa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIvY_EddgWVLKNZD3S-xTjijRkfogKFxFkA&s"/>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="container menu-section">
+  <h2 class="section-title">Menú destacado</h2>
+  <div class="menu-grid">
+    <article class="card">
+      <img src="https://tofuu.getjusto.com/orioneat-local/resized2/WHe4oWa9qZ9D3aCEt-300-x.webp" alt="Combo 1" />
+      <div class="card-body">
+        <h3>Combo Clásico</h3>
+        <p>Hamburguesa doble, papas medianas y bebida.</p>
+        <div class="card-footer">
+          <span class="price">Gs. 45.000</span>
+          <button class="btn btn-sm">Pedir</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgIp4fA8HBfOPxYr5LOYclqx0xJGnNPHUoAA&s" alt="Combo 2" />
+      <div class="card-body">
+        <h3>Pollo Crispy</h3>
+        <p>Filete de pollo crujiente, ensalada y papas.</p>
+        <div class="card-footer">
+          <span class="price">Gs. 40.000</span>
+          <button class="btn btn-sm">Pedir</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.aws.nestle.recipes/resized/2024_10_18T12_15_17_badun_images.badun.es_e60bbd75c966_salsa_de_verduras_a_la_crema_1290_742.jpg" alt="Combo 3" />
+      <div class="card-body">
+        <h3>Veggie Bowl</h3>
+        <p>Alternativa saludable con vegetales y salsa especial.</p>
+        <div class="card-footer">
+          <span class="price">Gs. 38.000</span>
+          <button class="btn btn-sm">Pedir</button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="sobre" class="about container">
+  <h2 class="section-title">Sobre FastBite</h2>
+  <p>Somos un restaurante local enfocado en comida rápida de calidad, ingredientes frescos y entrega rápida. Horario: Lun-Dom 10:00 - 23:00.</p>
+</section>
+
+<footer id="contacto" class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>FastBite</strong>
+      <p>Av. Principal 123 — Asunción, Paraguay</p>
+      <p>Tel: +595 123 456</p>
+    </div>
+    <div>
+      <h4>Síguenos</h4>
+      <p>@fastbitepy</p>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <form class="newsletter">
+        <input type="email" placeholder="Tu email" />
+        <button class="btn btn-primary" type="submit">Suscribirme</button>
+      </form>
+    </div>
+  </div>
+  <div class="copyright">© <span id="year"></span> FastBite — Todos los derechos reservados</div>
+</footer>
+
+<router-outlet />
